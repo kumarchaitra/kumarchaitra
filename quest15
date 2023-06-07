@@ -1,0 +1,40 @@
+package JavaAssign;
+		
+
+		import java.util.Random;
+		
+
+		public class Alpha_Num {
+		
+
+		public static void main (String[]args) {
+		
+
+		String Alphabet = "ABCDEFGHIJKabcdefg0987654321";
+		StringBuilder sb = new StringBuilder();
+		
+
+		Random random = new Random();
+		
+
+		int length = 10;
+		for (int i = 0; i < length; i++) {
+		
+
+		int index = random.nextInt(Alphabet.length());
+		char randomChar = Alphabet.charAt(index);
+		sb.append(randomChar);
+		}
+		String randomString = sb.toString();
+		
+
+		System.out.println("The Random String is : " + randomString);
+		
+
+		}
+		}
+		
+
+		
+
+		
