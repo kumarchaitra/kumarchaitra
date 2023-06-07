@@ -1,0 +1,18 @@
+package quest4;
+
+public class class_calculation{
+
+    public class calculation {
+        public static void main(String[] args) {
+            int x = 10;
+            int y = 5;
+            int add = x + y;
+            int sub = x-y;
+            int mul = x*y;
+            int div =x/y;
+            System.out.println("The addition of X + Y is :" + add);
+            System.out.println("The Substraction of X - Y is :" + sub);
+            System.out.println("The multiplication of X * Y is :" + mul);
+            System.out.println("The division of X / Y is :" + div);
+        }
+    }
