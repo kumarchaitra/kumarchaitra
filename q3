@@ -1,0 +1,21 @@
+public class age{
+public static void main(string[] args)
+system.out.print("enter ur age ::");
+int age;
+
+try{
+if(age < )
+throw new ageexception("invalid age");
+else 
+system.out.print("Valid age");
+}
+catch(ageexception a)
+{ system.out.print(a);
+}
+
+}
+
+class ageexception extends exception{
+public ageexception(string str)
+system.out.print(str)
+}
