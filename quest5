@@ -1,0 +1,38 @@
+package quest5;
+
+public class array_list {
+
+    import java.util.ArrayList;
+    public class array_list {
+        public static void main(String args[]) throws Exception {
+
+
+            array_list obj = new array_list();
+            obj.array_list();
+        }
+
+        public void array_list() {
+
+
+            ArrayList<Integer> Number = new ArrayList<Integer>();
+
+
+// Adding data into the ArrayList ...
+            for (int i = 200; i <= 500; i++) {
+                Number.add(i);
+            }
+
+
+// Print ArrayList one by one ..
+//System.out.println("Print Number ==>"+Number);
+            System.out.println("************************************");
+
+
+            for (int a : Number) {
+                System.out.println("Print Number ==>" + a);
+            }
+
+
+        }
+    }
+}
