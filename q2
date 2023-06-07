@@ -1,0 +1,14 @@
+package question2;
+ {
+     public class B_class {
+        private int varB;
+
+        public class B_class(int varB) {
+            this.varB = varB;
+        }
+
+        public int getVarB() {
+            return varB;
+        }
+
+}
