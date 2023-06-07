@@ -1,0 +1,13 @@
+
+package Assign1;
+
+public class P_Data extends Access_Private_data {
+    public static void main(String args[]) throws Exception {
+
+
+        P_data Hide_obj = new P_data();
+       Hide_obj.P_Data();
+
+
+    }
+}
