@@ -1,0 +1,14 @@
+package Assign1;
+ {
+     public class B_Class {
+        private int varB;
+
+        public class B_CLass(int varB) {
+            this.varB = varB;
+        }
+
+        public int getVarB() {
+            return varB;
+        }
+
+}
