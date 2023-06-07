@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+		public class Array_List {
+		
+
+		public static void main(String args[]) throws Exception{
+		
+
+		Array_List obj = new Array_List();
+		obj.Array_List();
+		}
+		public void Array_List(){
+		
+		ArrayList<Integer> Value= new ArrayList<Integer>();
+		
+
+		// Adding data into the ArrayList ...
+		for (int i = 200; i <= 500; i++) {
+		Value.add(i);
+		}
+		
+
+		
+
+		// Print ArrayList one by one ..
+		//System.out.println("Print Number ==>"+Value);
+		System.out.println("************************************");
+		
+
+		for(int a :Value {
+		System.out.println("Print Number ==>"+a);
+		}
+		
+
+		
+
+		}
+		
+
+		
+
+		
+
+		
+
+		}
