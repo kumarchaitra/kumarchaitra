@@ -1,0 +1,15 @@
+package JavaAssign;
+
+public class Access_Private_data {
+
+    public void P_data(){
+        System.out.println("I have 2 childern");
+    }
+
+    public void Sh_Dtaa(){
+
+        System.out.println("They loks smart");
+    }
+
+
+    }
