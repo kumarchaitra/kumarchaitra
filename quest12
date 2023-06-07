@@ -1,0 +1,33 @@
+
+package JavaAssign;
+		
+
+		public class Class_Count {
+		
+
+		
+
+		private static int objectCount = 0;
+		
+
+		public Class_Count() {
+		objectCount++;
+		}
+		
+
+		public static int getObjectCount() {
+		return objectCount;
+		}
+		
+
+		public static void main(String[] args) {
+		Class_Count obj1 = new Class_Count();
+		Class_Count obj2 = new Class_Count();
+		Class_Count obj3 = new Class_Count();
+		Class_Count obj4 = new Class_Count();
+		Class_Count obj5 = new Class_Count();
+		
+
+		System.out.println("Number of objects created: " + Class_Count.getObjectCount());
+		}
+		}
