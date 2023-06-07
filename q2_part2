@@ -1,0 +1,10 @@
+package question21;
+
+public class A_class {
+    public static void main(String[] args) {
+        int A = 13;
+
+        B_class valueB = new B_class(A);
+        System.out.println("Value of variable_B in classB: " + valueB.getVarB());
+    }
+} 
