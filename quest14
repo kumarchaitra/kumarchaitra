@@ -1,0 +1,20 @@
+package Assign;
+
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+
+public class Date_Time {
+public class Date_Time {
+public static void main(String[] args) {
+LocalDate myObj = LocalDate.now();
+System.out.println("Current Date : "+myObj);
+LocalDate myDateObj = LocalDate.now();
+//System.out.println("Before Formatting: " + myDateObj);
+DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("E, MMM-dd-yyyy ");
+
+
+String formattedDate = myDateObj.format(myFormatObj);
+System.out.println("Current Date: " + formattedDate);
+}
