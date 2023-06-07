@@ -1,0 +1,14 @@
+package JavaAssign;
+
+public class R_Data extends Access_Private_data {
+
+
+    public static void main(String args[]) throws Exception {
+
+
+        R_data Sh_obj = new R_Data();
+        Sh_obj.R_data();
+
+
+    }
+}
