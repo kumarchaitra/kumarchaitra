@@ -1,0 +1,89 @@
+"item": [
+		{
+			"name": "Create_pet_id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n  {\r\n    \"id\": {{petID}},\r\n    \"category\": {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    },\r\n    \"name\": \"{{petName}}\",\r\n    \"photoUrls\": [\r\n      \"string\"\r\n    ],\r\n    \"tags\": [\r\n      {\r\n        \"id\": 0,\r\n        \"name\": \"string\"\r\n      }\r\n    ],\r\n    \"status\": \"available\"\r\n  }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet"
+					],
+					"query": [
+						{
+							"key": "Id",
+							"value": "{{ID}}",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "{{Name}}",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "id_check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/{{petID}}",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"{{petID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_petid",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/pet/{{petID}}",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"pet",
+						"{{petID}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
