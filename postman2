@@ -1,0 +1,82 @@
+"item": [
+		{
+			"name": "uservalidation",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"pm.test(\"Response status code is 200\", function() {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate username\", function() {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.username).to.eql(pm.globals.get(\"Uname\"));\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate email\", function() {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.email).to.eql(\"PositiveAttitude.com\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validate user status\", function() {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.userStatus).to.eql(1);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.globals.set(\"Uname\", \"Uname001\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": {{user}},\r\n  \"email\": \"Positive@Attitude.com\",\r\n  \"userStatus\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/Uname001",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"Uname001"
+					],
+					"query": [
+						{
+							"key": "stutus",
+							"value": "Uname001",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
