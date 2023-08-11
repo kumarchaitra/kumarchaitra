@@ -1,0 +1,36 @@
+Feature: Validate if a pet is created
+
+Background:
+* url 'https://petstore.swagger.io/v2/pet/'
+
+Scenario Outline: Verify if pet with a specific ID exists
+  #* def petId = 100
+  Given path '<petId>'
+  When method GET
+  Then status 200
+  And print response
+
+  Examples:
+  |petId|
+  | 100 |
+
+
+
+----------------------------------
+run feature file through java class
+-----------------------
+package Karate;
+
+import com.intuit.karate.junit5.Karate;
+
+public class 5_Assign{
+
+    String projectpath=System.getProperty("user.dir").toString();
+
+    @Karate.Test
+    Karate testSample() {
+        return Karate.run(projectpath+"/source/test/featurefile/5_Assign.feature");
+    }
+
+
+}
