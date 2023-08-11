@@ -1,0 +1,42 @@
+{
+	"info": {
+"item": [
+		{
+			"name": "check",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "@tt!tude",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Uname001",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/login",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
